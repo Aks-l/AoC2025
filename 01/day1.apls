@@ -1,0 +1,10 @@
+
+lines ← ⊃⎕NGET 'day1.txt' 1
++/50=100|+\((⍎¨1↓¨lines) × (-1) * ('L'=⍨1↑¨lines))
+
+
+⍝ Breakdown:
+⍝ lmask ← 'L'=⍨1↑¨lines
+⍝ nums ← ⍎¨1↓¨lines
+⍝ finalnums ← nums × (-1) * lmask
+⍝ +/¯50=+\finalnums
